@@ -35,6 +35,19 @@ def prop_syntactic_chain(cls):
                 )
 
 
+    """
+    for key, value in keywords_dict.items():
+        exec(
+            f"types.new_class('python_{key}', \
+                tuple([python_keywords]))"
+        )
+        exec(
+            f"onto.python_{key}('python_{key.lower()}', \
+                specific_language=onto.python, \
+                    string_value='{value}')"
+        )
+    """
+
 with onto:
 
     class specific_language(ObjectProperty, FunctionalProperty):
